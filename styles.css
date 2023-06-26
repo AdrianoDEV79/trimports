@@ -6,6 +6,7 @@
 
 :root{
     --gradient:linear-gradient(to right,  #1268ae,#1414a2);
+    --gradient2:linear-gradient(to right,  #ae6a12,#db7928);
     --corPrimaria:#E8771E;
     --corSecundaria:#3a6ca7;
 
@@ -21,12 +22,13 @@ body{
     background-image: url("backGree2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:100%;
+    background-attachment: fixed;
+    height:100vh;
 }
 
 .container{
     max-width:540px;
-    height: 100%;
+    /* height: 100%; */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -42,12 +44,12 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20%;
 }
 
 .foto{
     border-radius: 50%;
-    width: 250px;
-    /* background: var(--gradient); */
+    width: 290px;
     margin-top: -100px;
 }
 
@@ -61,6 +63,7 @@ header{
 .description{
     font-size: 1em;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .sp1{
@@ -73,27 +76,37 @@ header{
 
 .description{
     color: var(--corSecundaria);
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 
 /* links */
-.list{
+
+/* .list{
     list-style: none;
     display: flex;
     flex-direction: column;
     margin: 2em 0;
     gap: 1.5em;
     
-}
+} */
 
 .list-item{
-    background: var(--gradient);
+    align-items: center;
+    background: var(--gradient2);
     font-size: 1.2em;
     height: 4em;
     border-radius: 2em;
     display: flex;
-    
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.summary{
+    background: var(--gradient);
 }
  i{
     font-size: 2em;
@@ -120,6 +133,7 @@ a{
  footer{
     display: flex;
     justify-content: space-around;
+    margin-top: 5%;
  }
 
  .contact{
@@ -138,7 +152,7 @@ a{
         font-size: 18px;
     }
     body{
-        background-image: url("backGree2.jpg");
+        background-image: url("backgree2.jpg");
     }
 
    
