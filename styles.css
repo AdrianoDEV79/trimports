@@ -34,7 +34,21 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    color: white;
+    /* color: white; */
+}
+
+h2{
+    text-align: center;
+}
+h6{
+    font-size: 12px;
+    text-align: center;
+}
+
+.img{
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 15px;
 }
 
 /* heder */
@@ -92,14 +106,14 @@ header{
 } */
 
 .list-item{
-    align-items: center;
     background: var(--gradient2);
-    font-size: 1.2em;
-    height: 4em;
+    font-size: 1.6em;
+    height: 3em;
     border-radius: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 3%;
     padding-left: 5%;
     padding-right: 5%;
@@ -108,8 +122,26 @@ header{
 .summary{
     background: var(--gradient);
 }
+.inicio{
+    color: white;
+    margin-bottom: -3px;
+}
  i{
-    font-size: 2em;
+    font-size: 1.5em;
+    color: white;
+ }
+ .btn{
+    font-size: 1.5em;
+ }
+
+ .accordion{
+    
+    --bs-accordion-btn-bg:var(--corPrimaria);
+    --bs-accordion-active-bg:var(--corSecundaria);
+    --bs-accordion-btn-color:white;
+    --bs-accordion-active-color:white;
+    --bs-accordion-btn-focus-box-shadow:none;
+    --bs-accordion-btn-focus-border-color:none;
  }
 
 .redes{
